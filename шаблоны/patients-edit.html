@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Пациенты - ред.
+{% endblock %}
+
+{% block h1 %}
+Пациенты - редактирование данных
+{% endblock %}
+
+{% block body %}
+<br>
+<form action="" method="post" class="form-control">
+    <input class="form-control" type="text" name="lastname" placeholder="Фамилия">
+    <input class="form-control" type="text" name="firstname" placeholder="Имя">
+    <input class="form-control" type="text" name="patrname" placeholder="Отчество"><br>
+    <input class="form-control" type="text" name="oms" placeholder="ОМС">
+    <input class="form-control" type="text" name="birthday" placeholder="Дата рождения">
+    <input class="form-control" type="text" name="sex" placeholder="Пол">
+    <input class="form-control" type="text" name="adress" placeholder="Адрес">
+    <input class="form-control" type="text" name="phone" placeholder="Телефон">
+    <button class="btn btn-success" type="submit">Добавить</button>
+</form>
+{% endblock %}
