@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Врачи
+{% endblock %}
+
+{% block h1 %}
+Врачи
+{% endblock %}
+
+{% block body %}
+<div class="table-responsive small">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Фамилия</th>
+        <th scope="col">Имя</th>
+        <th scope="col">Отчество</th>
+        <th scope="col">Специальность</th>
+        <th scope="col">Кабинет</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for doctor in doctors %}
+      <tr>
+        <td>{{ doctor.id }}</td>
+        <td>{{ doctor.lastname }}</td>
+        <td>{{ doctor.firstname }}</td>
+        <td>{{ doctor.patrname }}</td>
+        <td>{{ doctor.spec }}</td>
+        <td>{{ doctor.cab }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<form action="doctors/delete_record" method="POST" class="form-control">
+  <input class="form-control" type="text" name="record_id" placeholder="Удалить запись по id">
+  <button class="btn btn-success" type="submit">Удалить</button>
+</form>
+{% endblock %}
