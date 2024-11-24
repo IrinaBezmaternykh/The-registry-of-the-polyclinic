@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Записи на приемы - ред.
+{% endblock %}
+
+{% block h1 %}
+Записи на приемы - редактирование данных
+{% endblock %}
+
+{% block body %}
+<br>
+<form action="" method="post" class="form-control">
+    <input class="form-control" type="text" name="appdate" placeholder="Дата приема">
+    <input class="form-control" type="text" name="apptime" placeholder="Время приема">
+    <input class="form-control" type="text" name="problem" placeholder="Описание проблемы"><br>
+    <input class="form-control" type="text" name="patient_id" placeholder="id пациента">
+    <input class="form-control" type="text" name="doctor_id" placeholder="id врача">
+    <button class="btn btn-success" type="submit">Добавить</button>
+</form>
+{% endblock %}
