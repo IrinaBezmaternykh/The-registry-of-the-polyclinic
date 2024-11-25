@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <title>{% block title %} {% endblock %}</title>
     <style>
-        .bd-title {
-            --bs-heading-color: var(--bs-danger-color); 
-            font-size: 36px;
-            font-weight: normal;
-            text-transform: capitalize; 
-            line-height: 1.5; 
+     
+        .btn {
+            background-color: red;
+            color: white;
+            font-family: 'Arial', sans-serif; 
         }
-
+        
+        .bd-title {
+            color: var(--bs-danger-color);
+            font-family: 'Courier New', Courier, monospace;
+        }
         .mt-0 {
             margin-top: 30px !important; 
         }
