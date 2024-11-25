@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Записи на приемы
+ТАЛОНЫ
 {% endblock %}
 
 {% block h1 %}
-Записи на приемы
+ТАЛОНЫ
 {% endblock %}
 
 {% block body %}
@@ -13,12 +13,12 @@
     <table class="table table-striped table-sm">
       <thead>
         <tr>
-          <th scope="col">id</th>
+          <th scope="col">Номер талона</th>
           <th scope="col">Дата</th>
           <th scope="col">Время</th>
-          <th scope="col">Описание проблемы</th>
-          <th scope="col">id Пациента</th>
-          <th scope="col">id Врача</th>
+          <th scope="col">Код МКБ</th>
+          <th scope="col">Карта пациента</th>
+          <th scope="col">Номер врача</th>
         </tr>
       </thead>
       <tbody>
@@ -37,8 +37,8 @@
   </div>
   <br>
 <form action="appointments/delete_record" method="POST" class="form-control">
-    <input class="form-control" type="text" name="record_id" placeholder="Удалить запись по id">
-    <button class="btn btn-success" type="submit">Удалить</button>
+    <input class="form-control" type="text" name="record_id" placeholder="Запись отменена">
+    <button class="btn btn-success" type="submit">Отменить</button>
 </form>
 
 {% endblock %}
