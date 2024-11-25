@@ -1,5 +1,5 @@
 .bd-title {
-    --bs-heading-color: var(--bs-success-color); 
+    --bs-heading-color: var(--bs-primary); 
     font-size: 32px; 
     font-weight: bold; 
     text-transform: uppercase; 
@@ -11,5 +11,5 @@
 
 .h1, h1 {
     text-align: left; 
-    color: var(--bs-primary-color); 
+    color: var(--bs-primary); 
 }
