@@ -21,7 +21,6 @@
           <th scope="col">Дата рожд</th>
           <th scope="col">Пол</th>
           <th scope="col">Адрес</th>
-          <th scope="col">Телефон</th>
         </tr>
       </thead>
       <tbody>
@@ -31,11 +30,10 @@
           <td>{{ patient.lastname }}</td>
           <td>{{ patient.firstname }}</td>
           <td>{{ patient.patrname }}</td>
-          <td>{{ patient.oms }}</td>
+          <td>{{ patient.pasport }}</td>
           <td>{{ patient.birthday }}</td>
           <td>{{ patient.sex }}</td>
           <td>{{ patient.adress }}</td>
-          <td>{{ patient.phone }}</td>
         </tr>
         {% endfor %}
       </tbody>
