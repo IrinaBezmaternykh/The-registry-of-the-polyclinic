@@ -4,7 +4,7 @@ from database import db_session
 from models import Patient, Doctor, Appointment
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.sqbpro'
 
 
 @app.teardown_appcontext
